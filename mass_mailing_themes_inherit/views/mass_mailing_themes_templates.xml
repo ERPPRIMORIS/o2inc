@@ -8,6 +8,11 @@
                  data-images-info='{"logo": {"format": "png"}, "all": {"module": "mass_mailing_themes_inherit"}}'>
                  <t t-call="mass_mailing_themes_inherit.theme_o2inc_template"/>
             </div>
+            <div data-name="o2inc_1"
+                 data-img="/mass_mailing_themes_inherit/static/src/img/theme_imgs/default_o2inc_event_flyer"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "mass_mailing_themes_inherit"}}'>
+                 <t t-call="mass_mailing_themes_inherit.theme_o2inc_template_1"/>
+            </div>
         </xpath>
     </template>
 
@@ -20,6 +25,21 @@
                 <img src="/mass_mailing_themes_inherit/static/src/img/theme_o2inc/odoo-flyer-ver.jpg" class="d-block mx-auto" alt="Photo"/>
             </p>
         </div>
+        <!--<t t-call="mass_mailing.s_mail_block_footer_social_left" />-->
+    </template>
+    <template id="theme_o2inc_template_1">
+        <div class="o_mail_no_options">
+            <p><br/></p>
+            <p><br/></p>
+            <p>
+                <br/>
+                <img src="/mass_mailing_themes_inherit/static/src/img/theme_o2inc_event_flyer/odoo-flyer-ver.png" class="d-block mx-auto" alt="Photo"/>
+            </p>
+        </div>
+        <p>
+          <br/>
+          Click here to <a href="/unsubscribe_from_list">Unsubscribe</a>
+        </p>
         <!--<t t-call="mass_mailing.s_mail_block_footer_social_left" />-->
     </template>
 </odoo>
